@@ -1,0 +1,11 @@
+<!--
+name: msbuild windows
+description: msbuild with rebuild in release mode
+author: Go Team
+keywords: msbuild, nant, build, windows
+-->
+<exec command="MsBuild">
+  <arg>D:\path\to\project.sln</arg>
+  <arg>/t:Rebuild</arg>
+  <arg>/p:Configuration=Release</arg>
+</exec>

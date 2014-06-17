@@ -1,0 +1,10 @@
+<!--
+name: nuget pack (windows)
+author: John McKim
+description: Restore packages in a project
+moreinfo: http://docs.nuget.org/docs/reference/command-line-reference#Restore_command
+keywords: nuget, restore, windows
+-->
+<exec command="nuget">
+<arg>restore</arg>
+</exec>

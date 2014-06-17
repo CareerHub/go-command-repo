@@ -1,0 +1,12 @@
+<!--
+name: nuget pack (windows careerhub)
+-->
+<exec command="nuget">
+<arg>pack</arg>
+<arg>#{Nuget_Spec}</arg>
+<arg>-NonInteractive</arg>
+<arg>-Version</arg>
+<arg>%GO_PIPELINE_LABEL%</arg>
+<arg>-OutputDirectory</arg>
+<arg>"%Nuget_Publish_Path%%GO_PIPELINE_NAME%"</arg>
+</exec>

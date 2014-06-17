@@ -1,0 +1,11 @@
+<!--
+name: xunit windows
+description: run xunit tests and output in nunit format
+author: Go Team
+keywords: xunit, test, windows
+-->
+<exec command="xunit.console.clr4">
+  <arg>"#{Test_Project_Folder}\bin\#{Build_Configuration}\#{Test_Assembly_Name}.dll"</arg>
+  <arg>/nunit</arg>
+  <arg>"..\Test-Output\#{Test_Assembly_Name}.xml"</arg>
+</exec>
